@@ -4,7 +4,7 @@ This repo contains scripts for reproducing results reported in the calculus stud
 
 ~~~
 git clone https://github.com/SegataLab/calculus_study_Lena_2021.git
-~~
+~~~
 
 Dependencies required:
 * [numpy (>= 1.x)](https://numpy.org/install/)
@@ -15,7 +15,7 @@ Dependencies required:
 
 ## Genome alignment post-processing
 
-~~Bash
+~~~Bash
 usage: genome_aln_tailoring.py [-h] [-a] [-sa SEMI_AUTOMATED_TAILORING]
                                [-sl SHORT_LIST] [-m MANUAL_TAILORING]
                                [genome_alignment_file]
@@ -52,11 +52,11 @@ optional arguments:
                         missing info >0.2 are removed. Afterwards, columns
                         with missing info > 0.3 are removed.]
 
-~~
+~~~
 
 ## Gene content analysis (based on eggNOG annotation)
 
-~~Bash
+~~~Bash
 usage: kegg_analysis.py [-h] [-gap_roary [GENE_ABSENCE_PRESENCE_ROARY]]
                         [-p [PANGENOME]] [-eggnog [EGGNOG_ANNOTATION]]
                         [-cd CORE_DENSITY] [-hmap] [-o_fig OUTPUT_FIGURE]
@@ -84,7 +84,7 @@ optional arguments:
   -s SPECIES, --species SPECIES
                         Choose the species you want to check for unique genes.
                         [TS_1, TS_2, Moralis]
-~~ p, --heatmap      plotting the heatmap
+  -p, --heatmap      plotting the heatmap
   -o_fig OUTPUT_FIGURE, --output_figure OUTPUT_FIGURE
                         Specify the output figure name.
   -o_eggnog_subset OUTPUT_EGGNOG_SUBSET, --output_eggnog_subset OUTPUT_EGGNOG_SUBSET
@@ -94,4 +94,4 @@ optional arguments:
   -s SPECIES, --species SPECIES
                         Choose the species you want to check for unique genes.
                         [TS_1, TS_2, Moralis]
-~~
+~~~
